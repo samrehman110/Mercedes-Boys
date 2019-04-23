@@ -1,0 +1,6 @@
+framework module Pods_Mercedes {
+  umbrella header "Pods-Mercedes-umbrella.h"
+
+  export *
+  module * { export * }
+}
