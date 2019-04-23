@@ -2,8 +2,8 @@
 //  DealershipDetailsViewController.swift
 //  Mercedes
 //
-//  Created by Kiprop Korir on 23/04/2019.
-//  Copyright © 2019 Kiprop Korir. All rights reserved.
+//  Created by Sami Rehman on 23/04/2019.
+//  Copyright © 2019 Sami Rehman. All rights reserved.
 //
 
 import UIKit
@@ -37,15 +37,12 @@ lblName.text = dealership?.name
     }
     
     @IBAction func callDealership(_ sender: Any) {
-        if let url = URL(string: "TEL://\(dealership?.phone ?? "0000"))"),
-            UIApplication.shared.canOpenURL(url) {
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url, options: [:], completionHandler:nil)
-            } else {
-                UIApplication.shared.openURL(url)
-            }
+        guard let number = URL(string: "telprompt://\(dealership?.phone ?? ""))") else { return }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(number)
         } else {
-            // add error message here
+            // Fallback on earlier versions
+            UIApplication.shared.openURL(number)
         }
     }
 }

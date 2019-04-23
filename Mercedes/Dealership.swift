@@ -2,8 +2,8 @@
 //  Dealership.swift
 //  Mercedes
 //
-//  Created by Kiprop Korir on 22/04/2019.
-//  Copyright © 2019 Kiprop Korir. All rights reserved.
+//  Created by Sami Rehman on 22/04/2019.
+//  Copyright © 2019 Sami Rehman. All rights reserved.
 //
 
 import Foundation
