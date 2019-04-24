@@ -24,21 +24,21 @@ class DealershipDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Dealership"
-
+        
         lblName.text = dealership?.name
         lblLocation.text = "Location: \(dealership?.location ?? "")"
         lblTimes.text = "Opens from: \(dealership?.opening_times ?? "")"
         ivDealership.sd_setImage(with: Foundation.URL(string: dealership?.image_url ?? ""), placeholderImage: #imageLiteral(resourceName: "placeholder"))
         btnCall.setTitle( "CALL THEM AT \(dealership?.phone ?? "")", for: UIControl.State.normal)
     }
-  
+    
     @IBAction func seeMapLocation(_ sender: Any) {
         
         if (dealership?.longitude!.isEmpty)! || dealership?.longitude == "" || (dealership?.latitude!.isEmpty)! || dealership?.latitude == "" {
             
         }
         else {
-             openMaps()
+            openMaps()
         }
     }
     
@@ -63,15 +63,15 @@ extension DealershipDetailsViewController {
         
         let currentLocationLatitude = dealership?.latitude
         let currentLocationLongitude = dealership?.longitude
-
+        
         let latitude  = Double(currentLocationLatitude!)
         let longitude  = Double(currentLocationLongitude!)
         
         let regionDistance : CLLocationDistance = 1000
-    
-    
+        
+        
         let coorrdinate = CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!)
-    
+        
         let regionSpan =  MKCoordinateRegion.init(center: coorrdinate, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
         
         let options = [MKLaunchOptionsMapCenterKey:NSValue(mkCoordinate: regionSpan.center),MKLaunchOptionsMapSpanKey:NSValue(mkCoordinateSpan: regionSpan.span)]

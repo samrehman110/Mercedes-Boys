@@ -245,7 +245,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = "Kiprop Korir";
+				ORGANIZATIONNAME = "Sami Rehman";
 				TargetAttributes = {
 					412E8A7B226E4509004BAA8D = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -613,7 +613,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = samrehman.Mercedes;
+				PRODUCT_BUNDLE_IDENTIFIER = samrehman.Mercedes11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -632,7 +632,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = samrehman.Mercedes;
+				PRODUCT_BUNDLE_IDENTIFIER = samrehman.Mercedes11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
