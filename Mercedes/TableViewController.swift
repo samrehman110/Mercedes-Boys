@@ -60,6 +60,9 @@ class TableViewController: UITableViewController {
                 dealership.maps_link =  snap.data()["maps_link"] as! String? ?? ""
                 dealership.location = snap.data()["location"] as! String? ?? ""
                 dealership.phone = snap.data()["phone"] as! String? ?? ""
+                dealership.longitude = snap.data()["longitude"] as! String? ?? ""
+                dealership.latitude = snap.data()["latitude"] as! String? ?? ""
+
                 
                   self.dealerships.append(dealership)
             }

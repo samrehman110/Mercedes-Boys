@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class Dealership{
     var name:String = ""
     var location: String = ""
@@ -16,6 +17,9 @@ class Dealership{
     var maps_link: String = ""
     var phone: String = ""
     var id: String = ""
+    
+    var longitude : String?
+    var latitude : String?
     
     
     
